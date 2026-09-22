@@ -44,6 +44,28 @@ source in `docs/`, not the generated files.
 The initial setup is local only. Add a GitHub remote and a documentation
 publishing workflow when you are ready to publish.
 
+## Deploy with GitHub Pages
+
+This repository includes `.github/workflows/deploy-pages.yml`. It runs whenever
+changes are pushed to `main` (and can also be run manually from the Actions
+tab). The workflow installs the packages in `requirements-docs.txt`, builds the
+site with `python -m mkdocs build --strict`, and publishes the generated
+`site/` directory to GitHub Pages. A strict build prevents a documentation
+change with an invalid link or configuration from being deployed.
+
+To enable deployment after creating or connecting the GitHub repository:
+
+1. Commit the documentation source and `.github/workflows/deploy-pages.yml`.
+2. Push the `main` branch to GitHub.
+3. In the GitHub repository, open **Settings** → **Pages**.
+4. Under **Build and deployment** → **Source**, choose **GitHub Actions**.
+5. Check the first run in the **Actions** tab. Its deployment job displays the
+   published Pages URL.
+
+After this one-time setup, each push to `main` builds and deploys the current
+documentation. The generated `site/` directory remains ignored and is not
+committed.
+
 ## Planned documentation: URL parameters and the search request flow
 
 Requested learning topic (September 8, 2026): explain how JavaScript search
