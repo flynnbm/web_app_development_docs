@@ -15,5 +15,13 @@ nav:
   - Writing Guides: writing-guides.md
   - Setup:
       - Local Flask Web App: setup/local-flask-web-app.md
+  - Building Pages:
+      - Create a New Page: building-pages/create-a-new-page.md
+      - Add Buttons and Page Links: building-pages/add-buttons.md
+      - Add Headings and Formatted Text: building-pages/add-headings-and-text.md
+      - Add Images: building-pages/add-images.md
+  - Styling and Layout:
+      - Reusable Styles and Color Variables: styling-and-layout/reusable-styles.md
+      - Keep Elements Visible While Scrolling: styling-and-layout/keep-elements-visible.md
 
 strict: true
