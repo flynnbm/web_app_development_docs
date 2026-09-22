@@ -1,0 +1,17 @@
+site_name: Web App Development
+site_description: Practical notes and guides for building web applications with HTML, CSS, JavaScript, and Python.
+
+theme:
+  name: readthedocs
+
+plugins:
+  - search
+
+markdown_extensions:
+  - admonition
+
+nav:
+  - Home: index.md
+  - Writing Guides: writing-guides.md
+
+strict: true
