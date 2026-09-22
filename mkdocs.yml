@@ -13,5 +13,7 @@ markdown_extensions:
 nav:
   - Home: index.md
   - Writing Guides: writing-guides.md
+  - Setup:
+      - Local Flask Web App: setup/local-flask-web-app.md
 
 strict: true
